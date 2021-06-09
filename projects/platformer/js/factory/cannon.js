@@ -14,6 +14,15 @@
         game.cannon = game.add.group();
         game.projectile = game.add.group();
         game.projectile.enableBody = true;
+        /*
+createCannon(type, position, delay);
+
+type: The type of cannon to be made. This can be one of the following Strings: "top", "bottom", "left", or "right"
+position: The position coordinate for the cannon along the wall it is placed.
+delay: OPTIONAL The number of milliseconds to wait before firing the first projectile
+
+*/
+
 
         function createProjectile(x, y) {
             let projectile = game.projectile.create(x, y, assetKeyProjectile);
